@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(method="Post", action="/user")
+  input(type="hidden", name="_method", value="PUT")
+  p FirstName
+  input(type="text", name="name")
+  p LastName
+  input(type="text", name="name")
+  p Email
+  input(type="email", name="email")
+  p Age
+  input(type="number", name="age")
+  p Role
+  input(type="text",name="Role")
+  p Username
+  input(type="text",name="username")
+  p StartDate
+  input(type="Date",name="StartDate")
+  p EndDate
+  input(type="Date",name="EndDate")
+  p LeaveType 
+  input(type="text",name="LeaveType")
+  p Reason 
+  input(type="text",name="Reason")
+  p RequestBy
+  input(type="text",name="RequestBy")
+  p RequestedAt
+  input(type="text",name="RequestedAt")
+  p ApprovalStatus
+  input(type="text",name="ApprovalStatus")
+  p ApprovedAt
+  input(type="text",name="ApprovedAt")
+  p
+  input(type="submit")
